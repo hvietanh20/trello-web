@@ -36,7 +36,7 @@ function Profile() {
             aria-haspopup="true"
             aria-expanded={open ? 'true' : undefined}
           >
-            <Avatar sx={{ width: 30, height: 30 }} src='https://hinhnenpowerpoint.app/wp-content/uploads/2024/12/avatar-anh-trang-fb-4.png'/>
+            <Avatar sx={{ width: 36, height: 36 }} src='https://hinhnenpowerpoint.app/wp-content/uploads/2024/12/avatar-anh-trang-fb-4.png'/>
           </IconButton>
         </Tooltip>
         <Menu
