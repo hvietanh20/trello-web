@@ -4,7 +4,7 @@ import Button from '@mui/material/Button'
 import CreateNewFolderIcon from '@mui/icons-material/CreateNewFolder'
 
 
-function ListColumns() {
+function ListColumns({ columns }) {
   return (
     <Box sx={{
       bgcolor: 'inherit',
@@ -15,10 +15,9 @@ function ListColumns() {
       overflowY: 'hidden',
       '&::-webkit-scrollbar-track': { m: 2 }
     }}>
-      <Column />
-      <Column />
-      <Column />
-      <Column />
+
+      {columns?.map(column => (<Column key={column._id} column={column} />))}
+
 
       {/* ADD NEW COLLUMN */}
       <Box sx={{
